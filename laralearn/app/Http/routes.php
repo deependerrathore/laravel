@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'You have arried';
+});
+
+Route::get('/milk',function(){
+	return 'this is the milk';
 });
