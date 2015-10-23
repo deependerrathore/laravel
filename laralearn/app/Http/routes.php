@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/milk',function(){
 	return 'this is the milk';
 });
+Route::get('/milk/{flavor}',function($flavor){
+	return $flavor .' milk is nice';
+});
