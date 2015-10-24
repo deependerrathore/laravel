@@ -16,6 +16,11 @@ Route::get('/', function () {
 	$animal = 'lion';
 	$animal1 = 'zebra';
 	$city = 'Jaipur';
+
+	/*Magic methods*/
+	return view('welcome')->withInfo($city);
+
+
 	/*Two ways to pass multiple variable*/
 	
 	/*2/2*/
