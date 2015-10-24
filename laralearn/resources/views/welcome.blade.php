@@ -14,5 +14,8 @@
     	You have no friends
 	@endif
 
+	@while (true)
+		This is a bad idea because it will continue of ever
+	@endwhile
 </body>
 </html>
