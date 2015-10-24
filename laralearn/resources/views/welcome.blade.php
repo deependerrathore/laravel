@@ -4,8 +4,6 @@
     <title>Hi</title>
 </head>
 <body>
-    <?php $var = "Hello"; ?>
-    <h2>{{ $var }}</h2>
-
+    <h2>{{ $info }}</h2>
 </body>
 </html>

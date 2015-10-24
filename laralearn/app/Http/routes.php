@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+	$animal = 'lion';
+	$animal1 = 'zebra';
+	$city = 'Jaipur';
+
+
+
+	/*Two ways to pass an vairable*/
+
+
+	/*1/2*/
+    return view('welcome')->with('info',$city);
 });
+
