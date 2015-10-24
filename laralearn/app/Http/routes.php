@@ -16,6 +16,9 @@ Route::get('/', function () {
 	$animal = 'lion';
 	$animal1 = 'zebra';
 	$city = 'Jaipur';
+	$list = array($animal,$animal1,$city);
+	/*Sending a linst of variable*/
+	return view('welcome')->with('list',$list);
 
 	/*Magic methods*/
 	return view('welcome')->withInfo($city);
