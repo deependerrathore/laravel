@@ -13,9 +13,14 @@
 
 
 Route::get('/', function () {
-
-	$list = array('Harry','Ron','Hermione');
-	
-	return view('welcome')->withFriends($list);
+	return view('welcome');
 });
 
+
+Route::get('/about',function(){
+	return view('about');
+});
+
+Route::get('/contact',function(){
+	return view('contact');
+});
