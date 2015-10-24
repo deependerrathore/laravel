@@ -1,6 +1,7 @@
 @extends ('layouts.master')
 
 @section('navigation-bar')
+	@parent
 	<a href="/about">About</a>
 @stop
 

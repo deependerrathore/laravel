@@ -5,8 +5,9 @@
 </head>
 <body>
 	<nav>
-		<a href="/">Home</a>
-		@yield ('navigation-bar')
+		@section ('navigation-bar')
+			<a href="/">Home</a>
+		@show
 	</nav>
 	<section>
 		@yield ('content')
