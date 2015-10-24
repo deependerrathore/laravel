@@ -4,9 +4,15 @@
     <title>Hi</title>
 </head>
 <body>
-    
-    @for ($i = 0;$i<10;$i++)
-    	Current value of i is {{ $i }} </br>
-    @endfor
+    @if (count($friends) === 1)
+    	{{ $friends[0] }}
+    @elseif (count($friends) > 0)
+    	@foreach ($friends as $friend)
+    		I have a friend called: {{ $friend}} <br>
+    	@endforeach
+    @else
+    	You have no friends
+	@endif
+
 </body>
 </html>
