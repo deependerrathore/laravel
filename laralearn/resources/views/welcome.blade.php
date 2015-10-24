@@ -4,16 +4,9 @@
     <title>Hi</title>
 </head>
 <body>
-    @if (count($friends) === 1)
-    	{{ $friends[0] }}
-    @elseif (count($friends) > 0)
-    	I have multiple friends!
-    @else
-    	You have no friends
-	@endif
-
-	@unless ()
-
-	@endunless
+    
+    @for ($i = 0;$i<10;$i++)
+    	Current value of i is {{ $i }} </br>
+    @endfor
 </body>
 </html>
