@@ -4,8 +4,13 @@
     <title>Hi</title>
 </head>
 <body>
-    <h2>{{ $info }}</h2>
-    
+    @if (count($friends) === 1)
+    	{{ $friends[0] }}
+    @elseif (count($friends) > 0)
+    	I have multiple friends!
+    @else
+    	You have no friends
+	@endif
 
 </body>
 </html>
