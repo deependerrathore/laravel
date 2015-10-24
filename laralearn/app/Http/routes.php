@@ -20,7 +20,8 @@ Route::get('/', function () {
 
 
 	/*Two ways to pass an vairable*/
-
+	/*2/2*/
+	return view('welcome',array('info'=>$animal1));
 
 	/*1/2*/
     return view('welcome')->with('info',$city);
