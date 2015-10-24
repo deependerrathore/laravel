@@ -17,6 +17,12 @@ Route::get('/', function () {
 	$animal1 = 'zebra';
 	$city = 'Jaipur';
 	/*Two ways to pass multiple variable*/
+	
+	/*2/2*/
+	return view('welcome',array('info'=>$animal1,'info1'=> $city));
+	
+
+	/*1/2*/
 	return view('welcome')->with('info',$animal)->with('info1',$city);
 
 
