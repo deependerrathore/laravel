@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/profile/{anything?}',function($anything = ''){
+	return view('welcome')->with('info',$anything);
+});
+
 Route::get('/', function () {
 
 	$animal = 'lion';
