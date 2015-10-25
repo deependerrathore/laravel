@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 	*/
 	//Select * from users where id=3
-	$users = DB::table('users')->where('id',3)->first();//this will first execute get() then return first element
+	$users = DB::table('users')->where('id','>',1)->get();//this will first execute get() then return first element
 	dd($users);
 
 	//Select * from users where id=3
