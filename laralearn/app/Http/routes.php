@@ -14,6 +14,9 @@
 
 Route::get('/', function () {
 	//UPDATING/DELETING: ALWAYS SPECIFY THE WHERE CLAUSE
+
+	DB::table('users')->whereName('mudit')->delete();
+	return 'DELETED';
 	//DB::table('users')->where('id',4)->update(array('occupation'=>'Cook'));
 	DB::table('users')->whereId(4)->update(array('occupation'=>'Teacher'));
 	return 'updated';
