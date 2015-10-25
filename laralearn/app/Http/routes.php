@@ -13,7 +13,14 @@
 
 
 Route::get('/', function () {
+	//INSERTING
+	/*
+		We can use insertGetId (insted of insert) to grap the id of the inserted users
+		DB::table('users')->insertGetId(array('name'=>'mudit','occupation'=>'Engineer'));
+	*/
 
+	DB::table('users')->insert(array('name'=>'mudit','occupation'=>'Engineer'));
+	if('insert successfull');
 	/*
 		Small note:we can use magic methods in our where clauses
 			$users = DB::table('users')->where('occupation','Engineer')->first();
