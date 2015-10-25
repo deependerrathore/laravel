@@ -13,6 +13,7 @@
 
 
 Route::get('/', function () {
-	$name = DB::connection()->getDatabaseName();
-	return 'connected to '. $name;
+	//Select * from users;
+	$users = DB::table('users')->get();
+	dd($users);
 });
